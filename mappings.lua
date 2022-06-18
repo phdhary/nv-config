@@ -6,4 +6,5 @@ M.telescope = {
     -- ["<leader>rr"] = { "<cmd> '%s/' . @/ . '//gc' norm <LEFT><LEFT><LEFT>'", "replace all" },
   },
 }
+
 return M

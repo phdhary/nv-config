@@ -8,6 +8,7 @@ M.user = {
   ["fladson/vim-kitty"] = {},
 
   ["karb94/neoscroll.nvim"] = {
+    disable = true,
     config = function ()
       require("custom.plugins.configs.neoscroll")
     end,
@@ -21,12 +22,8 @@ M.user = {
 
   ["tpope/vim-surround"] = {},
 
-  ["max397574/better-escape.nvim"] = {
-    event = "InsertCharPre",
-    config = function()
-      require("custom.plugins.configs.better_escape").setup()
-    end,
-  },
+  ["tpope/vim-fugitive"] = {},
+
   -- ["jose-elias-alvarez/null-ls.nvim"] = {
   --   after = "nvim-lspconfig",
   --   config = function ()
