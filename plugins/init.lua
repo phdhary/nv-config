@@ -1,11 +1,17 @@
 local M = {}
 
 M.user = {
+  ["tpope/vim-surround"] = {},
+
+  ["tpope/vim-fugitive"] = {},
+
+  ["kdheepak/lazygit.nvim"] = {},
+
+  ["fladson/vim-kitty"] = {},
+
   ["goolord/alpha-nvim"] = {
      disable = false,
   },
-
-  ["fladson/vim-kitty"] = {},
 
   ["karb94/neoscroll.nvim"] = {
     disable = true,
@@ -20,12 +26,6 @@ M.user = {
     end,
   },
 
-  ["tpope/vim-surround"] = {},
-
-  ["tpope/vim-fugitive"] = {},
-
-  ["kdheepak/lazygit.nvim"] = {},
-
   -- ["jose-elias-alvarez/null-ls.nvim"] = {
   --   after = "nvim-lspconfig",
   --   config = function ()
@@ -37,11 +37,12 @@ M.options = {
   lspconfig = {
     setup_lspconf = "custom.plugins.configs.lspconfig",
   },
-}
 
  -- override = {
  --   ["nvim-telescope/telescope.nvim"] = {
  --     extensions_list = { "flutter", "themes", "terms" },
  --   },
  -- },
+}
+
 return M
