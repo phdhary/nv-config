@@ -14,7 +14,7 @@ M.user = {
   },
 
   ["karb94/neoscroll.nvim"] = {
-    disable = true,
+    disable = false,
     config = function ()
       require("custom.plugins.configs.neoscroll")
     end,
