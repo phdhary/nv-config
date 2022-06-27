@@ -5,9 +5,22 @@ M.user = {
 
   ["tpope/vim-fugitive"] = {},
 
+  ["tpope/vim-repeat"] = {},
+
   ["kdheepak/lazygit.nvim"] = {},
 
   ["fladson/vim-kitty"] = {},
+
+  ["andymass/vim-matchup"] = {},
+
+  ["ggandor/lightspeed.nvim"] = {
+    disable = false,
+  },
+
+  ["ggandor/leap.nvim"] = {
+    disable = true,
+    -- config = require("leap").set_default_keymaps(),
+  },
 
   ["goolord/alpha-nvim"] = {
      disable = false,
@@ -33,16 +46,15 @@ M.user = {
   --   end
   -- }
 }
+
 M.options = {
   lspconfig = {
     setup_lspconf = "custom.plugins.configs.lspconfig",
   },
+}
 
- -- override = {
- --   ["nvim-telescope/telescope.nvim"] = {
- --     extensions_list = { "flutter", "themes", "terms" },
- --   },
- -- },
+M.override = {
+  ["nvim-treesitter/nvim-treesitter"] = require("custom.plugins.configs.treesitter"),
 }
 
 return M

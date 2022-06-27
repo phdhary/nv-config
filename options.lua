@@ -3,7 +3,7 @@ local g = vim.g
 local cmd = vim.cmd
 local opt = vim.opt
 
-function M.options()
+function M.user()
   opt.rnu = true
   opt.guifont = "JetBrainsMono Nerd Font"
   cmd "au TextYankPost * silent! lua vim.highlight.on_yank()"

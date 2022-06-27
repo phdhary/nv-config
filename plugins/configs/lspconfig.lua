@@ -10,6 +10,10 @@ M.setup_lsp = function(attach, capabilities)
                      "jsonls",
                      "vimls",
                      "pyright",
+                     "marksman",
+                     "vuels",
+                     "emmet_ls",
+                     "yamlls",
                    }
 
    for _, lsp in ipairs(servers) do
