@@ -1,12 +1,14 @@
+-- vim:foldmethod=marker
 local M = {}
 
 M.user = {
+-- tpope {{{
   ["tpope/vim-surround"] = {},
 
   ["tpope/vim-fugitive"] = {},
 
   ["tpope/vim-repeat"] = {},
-
+-- }}}
   ["kdheepak/lazygit.nvim"] = {},
 
   ["fladson/vim-kitty"] = {},
