@@ -1,8 +1,10 @@
 # NvChad Personal Configuration
 
-This repository is my custom configuration of NvChad.
+NvChad is awesome base for Neovim config.
 
-In case that you'd like to try this (for some reason):
+This repository is my custom configuration of it.
+
+In case that you'd like to try this:
 - Install Neovim.
 - Follow [NvChad](https://nvchad.github.io/quickstart/install#pre-requisites)'s instruction .
 - Clone this repository to `{nvim config directory}/lua/custom/`.
