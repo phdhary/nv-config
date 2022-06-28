@@ -1,5 +1,9 @@
-local nls = require("null-ls")
+local present, nls = pcall(require, "null-ls")
 local b = nls.builtins
+
+if not present then
+   return
+end
 
 local sources = {
   b.formatting.stylua,
@@ -10,4 +14,5 @@ local sources = {
 
 nls.setup({
   sources = sources,
+  debug = true,
 })

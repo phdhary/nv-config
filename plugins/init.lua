@@ -2,30 +2,22 @@
 local M = {}
 
 M.user = {
--- tpope {{{
+-- Tim Pope's {{{
   ["tpope/vim-surround"] = {},
-
   ["tpope/vim-fugitive"] = {},
-
   ["tpope/vim-repeat"] = {},
 -- }}}
   ["kdheepak/lazygit.nvim"] = {},
-
   ["fladson/vim-kitty"] = {},
-
   ["andymass/vim-matchup"] = {},
-
-  ["ggandor/lightspeed.nvim"] = {
-    disable = false,
-  },
-
-  ["ggandor/leap.nvim"] = {
-    disable = true,
-    -- config = require("leap").set_default_keymaps(),
-  },
+  ["ggandor/lightspeed.nvim"] = {},
 
   ["goolord/alpha-nvim"] = {
+     after = "base46",
      disable = false,
+     config = function ()
+      require("custom.plugins.configs.alpha")
+     end,
   },
 
   ["karb94/neoscroll.nvim"] = {
@@ -45,8 +37,8 @@ M.user = {
   --   after = "nvim-lspconfig",
   --   config = function ()
   --     require("custom.plugins.configs.null_ls")
-  --   end
-  -- }
+  --   end,
+  -- },
 }
 
 M.options = {
