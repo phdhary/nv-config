@@ -6,16 +6,21 @@ if not present then
 end
 
 local sources = {
-  b.formatting.stylua,
-  b.formatting.dart_format,
-  b.formatting.prettierd,
-  -- b.formatting.prettier,
-  -- b.diagnostics.eslint,
-  -- b.completion.spell,
-  -- b.formatting.eslint_d,
+   -- formatting
+   b.formatting.stylua,
+   b.formatting.dart_format,
+   b.formatting.prettierd,
+   -- b.formatting.prettier,
+   -- b.formatting.eslint_d,
+   -- code action
+   b.code_actions.refactoring,
+   -- diagnostics
+   -- b.diagnostics.eslint,
+   -- completion
+   -- b.completion.spell,
 }
 
-nls.setup({
-  sources = sources,
-  debug = true,
-})
+nls.setup {
+   sources = sources,
+   debug = true,
+}
