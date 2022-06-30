@@ -33,12 +33,15 @@ M.user = {
     end,
   },
 
-  -- ["jose-elias-alvarez/null-ls.nvim"] = {
-  --   after = "nvim-lspconfig",
-  --   config = function ()
-  --     require("custom.plugins.configs.null_ls")
-  --   end,
-  -- },
+  ["jose-elias-alvarez/null-ls.nvim"] = {
+    after = "nvim-lspconfig",
+    config = function ()
+      require("custom.plugins.configs.null_ls")
+    end,
+  },
+  ["weilbith/nvim-code-action-menu"] = {
+    cmd = { 'CodeActionMenu' },
+  },
 }
 
 M.options = {

@@ -7,9 +7,12 @@ end
 
 local sources = {
   b.formatting.stylua,
-  b.diagnostics.eslint,
-  b.completion.spell,
   b.formatting.dart_format,
+  b.formatting.prettierd,
+  -- b.formatting.prettier,
+  -- b.diagnostics.eslint,
+  -- b.completion.spell,
+  -- b.formatting.eslint_d,
 }
 
 nls.setup({
