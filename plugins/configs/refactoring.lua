@@ -4,7 +4,7 @@ if not present then
    return
 end
 
-refactoring.setup {
+local options = {
    prompt_func_return_type = {
       go = false,
       java = false,
@@ -28,3 +28,5 @@ refactoring.setup {
    printf_statements = {},
    print_var_statements = {},
 }
+
+refactoring.setup { options }

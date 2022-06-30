@@ -4,7 +4,7 @@ if not present then
    return
 end
 
-neoscroll.setup {
+local options = {
    -- All these keys will be mapped to their corresponding default scrolling animation
    mappings = { "<C-u>", "<C-d>", "<C-b>", "<C-f>", "<C-y>", "<C-e>", "zt", "zz", "zb" },
    hide_cursor = true, -- Hide cursor while scrolling
@@ -17,3 +17,5 @@ neoscroll.setup {
    post_hook = nil, -- Function to run after the scrolling animation ends
    performance_mode = false, -- Disable "Performance Mode" on all buffers.
 }
+
+neoscroll.setup { options }
