@@ -6,15 +6,16 @@ if not present then
 end
 
 local sources = {
-   -- formatting
+   -- Formatting
    b.formatting.stylua,
    b.formatting.dart_format,
    b.formatting.prettierd,
    -- b.formatting.prettier,
    -- b.formatting.eslint_d,
-   -- code action
-   b.code_actions.refactoring,
-   -- diagnostics
+   -- Code Action
+   -- b.code_actions.refactoring,
+   -- b.code_actions.gitsigns,
+   -- Diagnostics
    -- b.diagnostics.eslint,
    -- completion
    -- b.completion.spell,
