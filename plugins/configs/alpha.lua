@@ -67,8 +67,8 @@ options.buttons = {
       button("SPC f w", "  Find Word  ", ":Telescope live_grep<CR>"),
       button("SPC b m", "  Bookmarks  ", ":Telescope marks<CR>"),
       button("SPC t h", "  Themes  ", ":Telescope themes<CR>"),
-      button("SPC e s", "  Core Settings", ":e $MYVIMRC | :cd %:p:h <CR>"),
-      button("SPC e z", "  Custom Settings", ":e $HOME/.config/nvim/lua/custom/chadrc.lua | :cd %:p:h <CR>"),
+      button("l", "  Core Settings", ":e $MYVIMRC | :cd %:p:h <CR>"),
+      button("h", "  Custom Settings", ":e $HOME/.config/nvim/lua/custom/chadrc.lua | :cd %:p:h <CR>"),
    },
    opts = {
       spacing = 1,
