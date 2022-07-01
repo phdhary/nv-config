@@ -7,10 +7,17 @@ M.user = {
    ["tpope/vim-fugitive"] = {},
    ["tpope/vim-repeat"] = {},
    -- }}}
-   ["kdheepak/lazygit.nvim"] = {},
-   ["fladson/vim-kitty"] = {},
    ["andymass/vim-matchup"] = {},
    ["ggandor/lightspeed.nvim"] = {},
+   ["kdheepak/lazygit.nvim"] = {
+      cmd = { "LazyGit" },
+   },
+   ["fladson/vim-kitty"] = {
+      ft = { "kitty" },
+   },
+   ["folke/zen-mode.nvim"] = {
+      cmd = { "ZenMode" },
+   },
 
    ["goolord/alpha-nvim"] = {
       after = "base46",
@@ -28,6 +35,8 @@ M.user = {
    },
 
    ["akinsho/flutter-tools.nvim"] = {
+      after = "nvim-lspconfig",
+      ft = { "dart" },
       config = function()
          require "custom.plugins.configs.nvim_flutter"
       end,
@@ -45,9 +54,17 @@ M.user = {
    },
 
    ["ThePrimeagen/refactoring.nvim"] = {
+      after = "nvim-lspconfig",
       disable = true,
       config = function()
          require "custom.plugins.configs.refactoring"
+      end,
+   },
+
+   ["sindrets/diffview.nvim"] = {
+      disable = false,
+      setup = function()
+         require "custom.plugins.configs.diffview"
       end,
    },
 }
