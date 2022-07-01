@@ -2,11 +2,9 @@
 local M = {}
 
 M.user = {
-   -- Tim Pope's {{{
    ["tpope/vim-surround"] = {},
    ["tpope/vim-fugitive"] = {},
    ["tpope/vim-repeat"] = {},
-   -- }}}
    ["andymass/vim-matchup"] = {},
    ["ggandor/lightspeed.nvim"] = {},
    ["kdheepak/lazygit.nvim"] = {
@@ -58,13 +56,6 @@ M.user = {
       disable = true,
       config = function()
          require "custom.plugins.configs.refactoring"
-      end,
-   },
-
-   ["sindrets/diffview.nvim"] = {
-      disable = false,
-      setup = function()
-         require "custom.plugins.configs.diffview"
       end,
    },
 }
