@@ -10,3 +10,9 @@ In case that you'd like to try this:
 - Follow [NvChad](https://nvchad.github.io/quickstart/install#pre-requisites)'s instruction.
 - Clone this repository to `{nvim config directory}/lua/custom/`.
 - Do a PackerSync.
+
+**Plugins so far**
+
+- [ NvChad's ]
+- null-ls
+- neoscroll
