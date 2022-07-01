@@ -4,10 +4,9 @@ if not present then
    return
 end
 
-flutter_tools.setup {}
-
+-- flutter_tools.setup {}
 -- alternatively you can override the default configs
-flutter_tools.setup {
+local options = {
    ui = {
       -- the border type to use for all floating windows, the same options/formats
       -- used for ":h nvim_open_win" e.g. "single" | "shadow" | {<table-of-eight-chars>}
@@ -97,3 +96,4 @@ flutter_tools.setup {
       },
    },
 }
+flutter_tools.setup { options }

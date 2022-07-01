@@ -13,10 +13,12 @@ local sources = {
    -- b.formatting.prettier,
    -- b.formatting.eslint_d,
    -- Code Action
+   b.code_actions.eslint,
    -- b.code_actions.refactoring,
    -- b.code_actions.gitsigns,
+   -- b.code_actions.xo,
    -- Diagnostics
-   -- b.diagnostics.eslint,
+   b.diagnostics.eslint,
    -- completion
    -- b.completion.spell,
 }
