@@ -67,8 +67,9 @@ M.options = {
 }
 
 M.override = {
-   ["nvim-treesitter/nvim-treesitter"] = require "custom.plugins.configs.treesitter",
-   ["lewis6991/gitsigns.nvim"] = require "custom.plugins.configs.gitsigns",
+   ["nvim-treesitter/nvim-treesitter"] = require "custom.plugins.override.treesitter",
+   ["lewis6991/gitsigns.nvim"] = require "custom.plugins.override.gitsigns",
+   ["kyazdani42/nvim-tree.lua"] = require "custom.plugins.override.nvimtree",
 }
 
 return M
