@@ -4,15 +4,13 @@ NvChad is awesome base for Neovim config.
 
 This repository is my custom configuration of it.
 
-In case that you'd like to try this:
+  In case that you'd like to try this:
 
 - Install Neovim.
-- Follow [NvChad](https://nvchad.github.io/quickstart/install#pre-requisites)'s instruction.
-- Clone this repository to `{nvim config directory}/lua/custom/`.
-- Do a PackerSync.
+- In shell run:
 
-**Plugins so far**
-
-- [ NvChad's ]
-- null-ls
-- neoscroll
+```
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1;
+git clone https://github.com/phdhary/nv-config.git ~/.config/nvim/lua/custom --depth 1;
+nvim;
+```
