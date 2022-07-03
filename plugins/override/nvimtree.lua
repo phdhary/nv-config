@@ -17,7 +17,7 @@ M.diagnostics = {
 }
 
 M.renderer = {
-   highlight_git = false,
+   highlight_git = true,
    highlight_opened_files = "none",
 
    indent_markers = {
