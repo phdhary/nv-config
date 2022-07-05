@@ -7,7 +7,7 @@ M.telescope = {
       ["<leader>ca"] = { "<cmd> CodeActionMenu<CR>", "  lsp code action menu" },
       ["<leader>zn"] = { "<cmd> ZenMode<CR>", "🙏 zen mode" },
       ["<leader>gg"] = { "<cmd> LazyGit<CR>", " open lazy git" },
-      -- ["<leader>rr"] = { "<cmd> '%s/' . @/ . '//gc' norm <LEFT><LEFT><LEFT>'", "replace all" },
+      ["<leader>mp"] = { "<cmd> MarkdownPreviewToggle<CR>", "  markdown preview toggle" },
    },
 }
 

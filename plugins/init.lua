@@ -28,9 +28,10 @@ M.user = {
    ["karb94/neoscroll.nvim"] = {
       disable = false,
       cond = function()
-         if vim.g.neovide == true then
+         local neovide = vim.g.neovide
+         if neovide == true then
             return false
-         elseif vim.g.neovide == nil then
+         elseif neovide == nil then
             return true
          end
       end,
@@ -63,6 +64,16 @@ M.user = {
       disable = true,
       config = function()
          require "custom.plugins.configs.refactoring"
+      end,
+   },
+
+   ["iamcco/markdown-preview.nvim"] = {
+      ft = { "markdown" },
+      run = function()
+         vim.fn["mkdp#util#install"]()
+      end,
+      setup = function()
+         vim.g.mkdp_filetypes = { "markdown" }
       end,
    },
 }
