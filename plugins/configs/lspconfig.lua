@@ -5,15 +5,19 @@ M.setup_lsp = function(attach, capabilities)
 
    -- lspservers with default config
    local servers = {
-      "html",
       "cssls",
-      "tsserver",
-      "jsonls",
-      "vimls",
-      "pyright",
-      "marksman",
-      "vuels",
       "emmet_ls",
+      "eslint",
+      "gopls",
+      "html",
+      "intelephense",
+      "jsonls",
+      "marksman",
+      "pyright",
+      "taplo",
+      "tsserver",
+      "vimls",
+      "vuels",
       "yamlls",
    }
 

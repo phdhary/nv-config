@@ -1,14 +1,16 @@
 local M = {}
 
 M.ensure_installed = {
-   "lua",
-   "vim",
-   "html",
-   -- "css",
-   "javascript",
-   "typescript",
    "go",
+   "html",
+   "javascript",
+   "lua",
+   "php",
+   "typescript",
+   "vim",
+   "vue",
    "yaml",
+   -- "css",
 }
 
 return M
