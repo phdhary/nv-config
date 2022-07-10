@@ -5,6 +5,7 @@ M.setup_lsp = function(attach, capabilities)
 
    -- lspservers with default config
    local servers = {
+      "bashls",
       "cssls",
       "emmet_ls",
       "eslint",

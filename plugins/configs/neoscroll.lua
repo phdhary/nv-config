@@ -18,4 +18,18 @@ local options = {
    performance_mode = false, -- Disable "Performance Mode" on all buffers.
 }
 
+local config = require "neoscroll.config"
+local mappings = {}
+
+mappings["<C-u>"] = { "scroll", { "-vim.wo.scroll", "true", "100", nil } }
+mappings["<C-d>"] = { "scroll", { "vim.wo.scroll", "true", "100", nil } }
+mappings["<C-b>"] = { "scroll", { "-vim.api.nvim_win_get_height(0)", "true", "100", nil } }
+mappings["<C-f>"] = { "scroll", { "vim.api.nvim_win_get_height(0)", "true", "100", nil } }
+mappings["<C-y>"] = { "scroll", { "-0.10", "false", "100", nil } }
+mappings["<C-e>"] = { "scroll", { "0.10", "false", "100", nil } }
+mappings["zt"] = { "zt", { "100" } }
+mappings["zz"] = { "zz", { "100" } }
+mappings["zb"] = { "zb", { "100" } }
+
 neoscroll.setup { options }
+config.set_mappings(mappings)
