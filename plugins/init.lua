@@ -1,4 +1,3 @@
--- vim:foldmethod=marker
 local M = {}
 
 M.user = {
@@ -7,14 +6,34 @@ M.user = {
    ["tpope/vim-repeat"] = {},
    ["andymass/vim-matchup"] = {},
    ["ggandor/lightspeed.nvim"] = {},
+   -- ["wellle/context.vim"] = {},
+   ["mfussenegger/nvim-dap"] = {},
+
    ["kdheepak/lazygit.nvim"] = {
       cmd = { "LazyGit" },
    },
+
    ["fladson/vim-kitty"] = {
       ft = { "kitty" },
    },
+
    ["folke/zen-mode.nvim"] = {
       cmd = { "ZenMode" },
+   },
+
+   ["weilbith/nvim-code-action-menu"] = {
+      cmd = { "CodeActionMenu" },
+   },
+   ["rcarriga/nvim-dap-ui"] = {
+      config = function()
+         require "custom.plugins.configs.dapui"
+      end,
+   },
+
+   ["akinsho/flutter-tools.nvim"] = {
+      config = function()
+         require "custom.plugins.configs.flutter_tools"
+      end,
    },
 
    ["goolord/alpha-nvim"] = {
@@ -25,38 +44,11 @@ M.user = {
       end,
    },
 
-   ["karb94/neoscroll.nvim"] = {
-      disable = false,
-      cond = function()
-         local neovide = vim.g.neovide
-         if neovide == true then
-            return false
-         elseif neovide == nil then
-            return true
-         end
-      end,
-      config = function()
-         require "custom.plugins.configs.neoscroll"
-      end,
-   },
-
-   ["akinsho/flutter-tools.nvim"] = {
-      after = "nvim-lspconfig",
-      ft = { "dart" },
-      config = function()
-         require "custom.plugins.configs.nvim_flutter"
-      end,
-   },
-
    ["jose-elias-alvarez/null-ls.nvim"] = {
       after = "nvim-lspconfig",
       config = function()
          require "custom.plugins.configs.null_ls"
       end,
-   },
-
-   ["weilbith/nvim-code-action-menu"] = {
-      cmd = { "CodeActionMenu" },
    },
 
    ["ThePrimeagen/refactoring.nvim"] = {
@@ -74,6 +66,21 @@ M.user = {
       end,
       setup = function()
          vim.g.mkdp_filetypes = { "markdown" }
+      end,
+   },
+
+   ["karb94/neoscroll.nvim"] = {
+      disable = false,
+      cond = function()
+         local neovide = vim.g.neovide
+         if neovide == true then
+            return false
+         elseif neovide == nil then
+            return true
+         end
+      end,
+      config = function()
+         require "custom.plugins.configs.neoscroll"
       end,
    },
 }

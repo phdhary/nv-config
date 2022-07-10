@@ -8,6 +8,8 @@ M.telescope = {
       ["<leader>zn"] = { "<cmd> ZenMode<CR>", "🙏 zen mode" },
       ["<leader>gg"] = { "<cmd> LazyGit<CR>", " open lazy git" },
       ["<leader>mp"] = { "<cmd> MarkdownPreviewToggle<CR>", "  markdown preview toggle" },
+      ["<leader>db"] = { "<cmd> lua require('dapui').toggle()<CR>", " toggle debug ui" },
+      ["<leader>bp"] = { "<cmd> DapToggleBreakpoint<CR>", " toggle breakpoint" },
    },
 }
 
