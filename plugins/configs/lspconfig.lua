@@ -22,6 +22,34 @@ M.setup_lsp = function(attach, capabilities)
       "yamlls",
    }
 
+   lspconfig.emmet_ls.setup {
+      filetypes = {
+         "html",
+         "css",
+         "javascript",
+         "javascriptreact",
+         "typescriptreact",
+         "typescript",
+      },
+   }
+
+   lspconfig.gopls.setup {
+      settings = {
+         gopls = {
+            hints = {
+               assignVariableTypes = true,
+               compositeLiteralFields = true,
+               compositeLiteralTypes = true,
+               constantValues = true,
+               functionTypesParameters = true,
+               parameterNames = true,
+               rangeVariableTypes = true,
+            },
+            usePlaceholders = true,
+         },
+      },
+   }
+
    for _, lsp in ipairs(servers) do
       lspconfig[lsp].setup {
          on_attach = attach,

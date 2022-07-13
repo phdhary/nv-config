@@ -12,6 +12,7 @@ local sources = {
    b.formatting.dart_format,
    b.formatting.prettierd,
    b.formatting.beautysh,
+   b.formatting.gofmt,
    -- b.formatting.prettier,
    -- b.formatting.eslint_d,
    -- Code Action

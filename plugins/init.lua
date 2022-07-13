@@ -24,6 +24,7 @@ M.user = {
    ["weilbith/nvim-code-action-menu"] = {
       cmd = { "CodeActionMenu" },
    },
+
    ["rcarriga/nvim-dap-ui"] = {
       config = function()
          require "custom.plugins.configs.dapui"
@@ -36,18 +37,18 @@ M.user = {
       end,
    },
 
+   ["jose-elias-alvarez/null-ls.nvim"] = {
+      after = "nvim-lspconfig",
+      config = function()
+         require "custom.plugins.configs.null_ls"
+      end,
+   },
+
    ["goolord/alpha-nvim"] = {
       after = "base46",
       disable = false,
       config = function()
          require "custom.plugins.configs.alpha"
-      end,
-   },
-
-   ["jose-elias-alvarez/null-ls.nvim"] = {
-      after = "nvim-lspconfig",
-      config = function()
-         require "custom.plugins.configs.null_ls"
       end,
    },
 
