@@ -1,7 +1,7 @@
 local M = {}
 
 M.user = {
-   ["tpope/vim-surround"] = {},
+   -- ["tpope/vim-surround"] = {},
    ["tpope/vim-fugitive"] = {},
    ["tpope/vim-repeat"] = {},
    ["andymass/vim-matchup"] = {},
@@ -34,6 +34,12 @@ M.user = {
    ["akinsho/flutter-tools.nvim"] = {
       config = function()
          require "custom.plugins.configs.flutter_tools"
+      end,
+   },
+
+   ["kylechui/nvim-surround"] = {
+      config = function()
+         require "custom.plugins.configs.nvim_surround"
       end,
    },
 
