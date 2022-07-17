@@ -6,6 +6,7 @@ M.ensure_installed = {
    "javascript",
    "lua",
    "php",
+   "rust",
    "typescript",
    "vim",
    "vue",

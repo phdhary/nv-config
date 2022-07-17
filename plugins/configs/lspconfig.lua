@@ -15,6 +15,7 @@ M.setup_lsp = function(attach, capabilities)
       "jsonls",
       "marksman",
       "pyright",
+      -- "rust_analyzer",
       "taplo",
       "tsserver",
       "vimls",

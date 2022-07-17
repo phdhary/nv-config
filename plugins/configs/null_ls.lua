@@ -13,6 +13,7 @@ local sources = {
    b.formatting.prettierd,
    b.formatting.beautysh,
    b.formatting.gofmt,
+   b.formatting.rustfmt,
    -- b.formatting.prettier,
    -- b.formatting.eslint_d,
    -- Code Action
