@@ -43,11 +43,11 @@ M.user = {
       end,
    },
 
-   ["simrat39/rust-tools.nvim"] = {
-     config  = function ()
-      require("custom.plugins.configs.rust_tools")
-     end
-   },
+   --["simrat39/rust-tools.nvim"] = {
+     --config  = function ()
+      --require("custom.plugins.configs.rust_tools")
+     --end
+   --},
 
    ["jose-elias-alvarez/null-ls.nvim"] = {
       after = "nvim-lspconfig",
