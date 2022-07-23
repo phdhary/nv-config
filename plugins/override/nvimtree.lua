@@ -18,7 +18,7 @@ M.diagnostics = {
 
 M.renderer = {
    highlight_git = true,
-   highlight_opened_files = "none",
+   highlight_opened_files = "none", -- icon, name, all, none
 
    indent_markers = {
       enable = false,
