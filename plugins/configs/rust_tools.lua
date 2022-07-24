@@ -1,7 +1,7 @@
 local present, rust_tools = pcall(require, "rust-tools")
 
 if not present then
-   return
+  return
 end
 
 rust_tools.setup {}
