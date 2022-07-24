@@ -32,30 +32,19 @@ M.setup_lsp = function(attach, capabilities)
 
    lspconfig.emmet_ls.setup {
       filetypes = {
-         "html",
          "css",
+         "html",
          "javascript",
          "javascriptreact",
-         "typescriptreact",
          "typescript",
+         "typescriptreact",
       },
    }
 
    lspconfig.gopls.setup {
-      settings = {
-         gopls = {
-            hints = {
-               assignVariableTypes = true,
-               compositeLiteralFields = true,
-               compositeLiteralTypes = true,
-               constantValues = true,
-               functionTypesParameters = true,
-               parameterNames = true,
-               rangeVariableTypes = true,
-            },
-            usePlaceholders = true,
-         },
-      },
+      on_attach = function(client, _)
+         client.resolved_capabilities.document_formatting = false
+      end,
    }
 
    lspconfig.tsserver.setup {
