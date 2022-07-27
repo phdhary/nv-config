@@ -59,7 +59,7 @@ M.user = {
   ["neovim/nvim-lspconfig"] = {
     config = function()
       require "plugins.configs.lspconfig"
-      require "custom.plugins.lspconfig"
+      require "custom.plugins.configs.lspconfig"
     end,
   },
 
@@ -109,6 +109,7 @@ M.override = {
   ["nvim-treesitter/nvim-treesitter"] = require "custom.plugins.override.treesitter",
   ["lewis6991/gitsigns.nvim"] = require "custom.plugins.override.gitsigns",
   ["kyazdani42/nvim-tree.lua"] = require "custom.plugins.override.nvimtree",
+  ["williamboman/mason.nvim"] = require "custom.plugins.override.mason",
 }
 
 return M
