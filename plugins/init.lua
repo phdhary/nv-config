@@ -56,6 +56,13 @@ M.user = {
     end,
   },
 
+  ["neovim/nvim-lspconfig"] = {
+    config = function()
+      require "plugins.configs.lspconfig"
+      require "custom.plugins.lspconfig"
+    end,
+  },
+
   ["goolord/alpha-nvim"] = {
     after = "base46",
     disable = false,
@@ -95,12 +102,6 @@ M.user = {
     config = function()
       require "custom.plugins.configs.neoscroll"
     end,
-  },
-}
-
-M.options = {
-  lspconfig = {
-    setup_lspconf = "custom.plugins.configs.lspconfig",
   },
 }
 
